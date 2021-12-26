@@ -28,7 +28,7 @@ function indexCards():ReactFragment{
 }
 function indexCard(title:string,text:string): ReactFragment{
   return (
-            <div id={nanoid()} className="group col-span-1 w-1/4">
+            <div id={nanoid()} className="md:w-1/4 my-2 mx-2 group">
             <div className="bg-blue-50  shadow group-hover:bg-violet-500 group-hover:shadow-lg rounded-md border border-1 p-2 1 ">
                 <div className="group-hover:font-bold group-hover:text-white font-semibold text-xl my-2">{title}:</div>
                 <div className='group-hover:text-white'>{text}</div>
@@ -38,7 +38,6 @@ function indexCard(title:string,text:string): ReactFragment{
 }
 export default function Home() {
   return (
-    <body>
       <div className="">
         <Head>
           <title>ILW3</title>
@@ -77,13 +76,13 @@ export default function Home() {
               this location
             </a>
           </p>
-          <div className=" flex space-x-2 mx-20 place-items-start">
+          <div className="flex-grid sm:flex space-x-2 sm:mx-20  sm:items-start">
             {indexCards()}
           </div>
         </main>
 
-        <footer className="mx-20 mt-20">
-          <div className="text-sm text-right font-mono">
+        <footer className="grid gap-2 m-2 text-center space-x-2 lg:mx-20 lg:mt-20">
+          <div className="text-sm lg:text-right font-mono">
             <a
               className="text-blue-600 underline mx-2"
               href="https://ipfs.fleek.co/ipfs/QmR1Bro6godmmfWpLGUZpUsKsbKp4A1vkzK9MZQpYTTYKa/"
@@ -93,7 +92,7 @@ export default function Home() {
               IPFS Link 1 (Fleek)
             </a>
           </div>
-          <div className="text-sm text-right font-mono">
+          <div className="text-sm lg:text-right font-mono">
             <a
               className="text-blue-600 underline mx-2"
               href="https://bafybeibhs2vhdw2gp3dbcq4kk7pw5pitad36cdnibgccoby4se2znivu4e.ipfs.infura-ipfs.io/"
@@ -104,7 +103,7 @@ export default function Home() {
               IPFS Link 2 (infura)
             </a>
           </div>
-          <div className="text-sm text-right font-mono">
+          <div className="text-sm lg:text-right font-mono">
             <a
               className="text-blue-600 underline mx-2"
               href="https://github.com/royosherove/ilweb3next/"
@@ -116,12 +115,11 @@ export default function Home() {
             </a>
           </div>
         </footer>
-      </div>
       <div id="clickyweb">
         <script async src="//static.getclicky.com/101347612.js"></script>
         <noscript> <p> <img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101347612ns.gif" /> </p>
         </noscript>
       </div>
-    </body>
+      </div>
   );
 }

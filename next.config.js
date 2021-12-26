@@ -1,4 +1,5 @@
 module.exports = {
   reactStrictMode: true,
-    assetPrefix: './'
+  assetPrefix:  process.env.IN_DEV ? '/' : './'
+
 }
