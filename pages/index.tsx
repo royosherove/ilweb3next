@@ -84,6 +84,23 @@ export default function Home() {
           <div className="text-sm text-right font-mono">
             <a
               className="text-blue-600 underline mx-2"
+              href="https://ipfs.fleek.co/ipfs/QmR1Bro6godmmfWpLGUZpUsKsbKp4A1vkzK9MZQpYTTYKa/"
+              target='_blank' rel="noreferrer"
+            > 
+            IPFS Link 1 (Fleek)
+            </a>
+          </div>
+          <div className="text-sm text-right font-mono">
+            <a
+              className="text-blue-600 underline mx-2"
+              href="https://bafybeibhs2vhdw2gp3dbcq4kk7pw5pitad36cdnibgccoby4se2znivu4e.ipfs.infura-ipfs.io/"
+              target='_blank' rel="noreferrer"
+            > IPFS Link 2 (infura)
+            </a>
+          </div>
+          <div className="text-sm text-right font-mono">
+            <a
+              className="text-blue-600 underline mx-2"
               href="https://github.com/royosherove/ilweb3next/"
               target='_blank' rel="noreferrer"
             > Contribute code to this website
