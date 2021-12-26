@@ -1,3 +1,4 @@
+import { nanoid } from 'nanoid'
 import Head from 'next/head'
 import Image from 'next/image'
 import { ReactFragment } from 'react'
@@ -26,7 +27,7 @@ function indexCards():ReactFragment{
 }
 function indexCard(title:string,text:string): ReactFragment{
   return (
-            <div className="group col-span-1 w-1/4">
+            <div id={nanoid()} className="group col-span-1 w-1/4">
             <div className="bg-blue-50  shadow group-hover:bg-violet-500 group-hover:shadow-lg rounded-md border border-1 p-2 1 ">
                 <div className="group-hover:font-bold group-hover:text-white font-semibold text-xl my-2">{title}:</div>
                 <div className='group-hover:text-white'>{text}</div>
