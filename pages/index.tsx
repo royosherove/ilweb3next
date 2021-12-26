@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { nanoid } from 'nanoid'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -117,23 +118,8 @@ export default function Home() {
         </footer>
       </div>
       <div id="clickyweb">
-        <a title="Real Time Web Analytics" href="http://clicky.com/101347612">
-          <img
-            alt="Clicky"
-            src="//static.getclicky.com/media/links/badge.gif"
-            border="0"
-          />
-        </a>
         <script async src="//static.getclicky.com/101347612.js"></script>
-        <noscript>
-          <p>
-            <img
-              alt="Clicky"
-              width="1"
-              height="1"
-              src="//in.getclicky.com/101347612ns.gif"
-            />
-          </p>
+        <noscript> <p> <img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101347612ns.gif" /> </p>
         </noscript>
       </div>
     </body>
