@@ -69,6 +69,7 @@ export default function Home() {
             <a
               className="text-blue-700 underline font-bold"
               href="https://www.meetup.com/ilw3-israel-web-3-0-smart-contracts-dev-meetup/"
+              target='_blank' rel="noreferrer"
             >
               this location
             </a>
@@ -83,6 +84,7 @@ export default function Home() {
             <a
               className="text-blue-600 underline mx-2"
               href="https://github.com/royosherove/ilweb3next/"
+              target='_blank' rel="noreferrer"
             > Contribute code to this website
               on GitHub
             </a>
