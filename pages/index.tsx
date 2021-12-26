@@ -36,7 +36,7 @@ function indexCard(title:string,text:string): ReactFragment{
 }
 export default function Home() {
   return (
-    <body >
+    <body>
       <div className="">
         <Head>
           <title>ILW3</title>
@@ -52,13 +52,15 @@ export default function Home() {
             <h1 className="grid items-center px-20 py-1 text-2xl font-semibold hover:shadow-xl space-y-0 ">
               <div className=" ">Israel</div>
               <div className="text-3xl text-white font-bold bg-blue-500 rounded-md py-2 px-4 mx-1 leading-1 shadow shadow-red-200">
-                    Web<sup className='text-xl'>3</sup>
+                Web<sup className="text-xl">3</sup>
                 <span className="text-lg text-yellow-300 font-mono font-normal mx-2 leading-1">
                   &
                 </span>
                 <span>Smart Contracts</span>
               </div>
-              <div className='text-right  italic font-normal'>Developers Meetup</div>
+              <div className="text-right  italic font-normal">
+                Developers Meetup
+              </div>
             </h1>
           </div>
 
@@ -76,7 +78,16 @@ export default function Home() {
           </div>
         </main>
 
-        <footer className=""></footer>
+        <footer className="mx-20 mt-20">
+          <div className="text-sm text-right font-mono">
+            <a
+              className="text-blue-600 underline mx-2"
+              href="https://github.com/royosherove/ilweb3next/"
+            > Contribute code to this website
+              on GitHub
+            </a>
+          </div>
+        </footer>
       </div>
     </body>
   );
