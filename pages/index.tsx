@@ -49,6 +49,25 @@ export default function Home() {
         </Head>
 
         <main className="">
+          <div className='rounded bg-purple-600 p-2 text-center w-1/4 space-x-12  '>
+            <a
+              className="text-white "
+              href="https://discord.gg/YnpgKfcyyW"
+              target="_blank"
+              rel="noreferrer"
+            >
+            Discord 
+            </a>
+            <a
+              className="text-white "
+              href="https://www.meetup.com/ilw3-israel-web-3-0-smart-contracts-dev-meetup/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Meetup Group
+            </a>
+          </div>
+
           <div className="flex justify-center mt-10">
             <h1 className="grid items-center px-20 py-1 text-2xl font-semibold hover:shadow-xl space-y-0 ">
               <div className=" ">Israel</div>
@@ -64,24 +83,12 @@ export default function Home() {
               </div>
             </h1>
           </div>
-
-          <p className={styles.description}>
-            Register for the meetup group at{" "}
-            <a
-              className="text-blue-700 underline font-bold"
-              href="https://www.meetup.com/ilw3-israel-web-3-0-smart-contracts-dev-meetup/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              this location
-            </a>
-          </p>
-          <div className="flex-grid sm:flex space-x-2 sm:mx-20  sm:items-start">
+          <div className="flex-grid sm:flex space-x-2 sm:mx-20  sm:items-start mt-20 ">
             {indexCards()}
           </div>
         </main>
 
-        <footer className="grid gap-2 m-2 text-center space-x-2 lg:mx-20 lg:mt-20">
+        <footer className="grid  m-2 text-center space-x-2 lg:mx-20 lg:mt-20">
           <div className="text-sm lg:text-right font-mono">
             <a
               className="text-blue-600 underline mx-2"
