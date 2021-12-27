@@ -49,9 +49,9 @@ export default function Home() {
         </Head>
 
         <main className="">
-          <div className='rounded bg-purple-600 p-2 text-center w-1/4 space-x-12  '>
+          <div className='group rounded bg-purple-600 p-2 text-center w-1/4 space-x-12  '>
             <a
-              className="text-white "
+              className="text-white group-hover:text-yellow-500 "
               href="https://discord.gg/YnpgKfcyyW"
               target="_blank"
               rel="noreferrer"
@@ -59,7 +59,7 @@ export default function Home() {
             Discord 
             </a>
             <a
-              className="text-white "
+              className="text-white group-hover:text-yellow-500 "
               href="https://www.meetup.com/ilw3-israel-web-3-0-smart-contracts-dev-meetup/"
               target="_blank"
               rel="noreferrer"
@@ -69,9 +69,9 @@ export default function Home() {
           </div>
 
           <div className="flex justify-center mt-10">
-            <h1 className="grid items-center px-20 py-1 text-2xl font-semibold hover:shadow-xl space-y-0 ">
+            <h1 className="grid items-center px-20 py-1 text-2xl font-semibold space-y-0 ">
               <div className=" ">Israel</div>
-              <div className="text-3xl text-white font-bold bg-blue-500 rounded-md py-2 px-4 mx-1 leading-1 shadow shadow-red-200">
+              <div className="text-3xl text-white font-bold bg-blue-500 rounded-md py-2 px-4 mx-1 leading-1 shadow shadow-red-200 hover:shadow-xl">
                 Web<sup className="text-xl">3</sup>
                 <span className="text-lg text-yellow-300 font-mono font-normal mx-2 leading-1">
                   &
