@@ -1,9 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import { nanoid } from 'nanoid'
+import { nanoid } from 'nanoid';
 import Head from 'next/head'
-import Image from 'next/image'
 import { ReactFragment } from 'react'
-import styles from '../styles/Home.module.css'
 
 function indexCards():ReactFragment{
   const cards = [
@@ -28,7 +26,7 @@ function indexCards():ReactFragment{
 }
 function indexCard(title:string,text:string): ReactFragment{
   return (
-    <div id={nanoid()} className="group md:w-1/4 my-2 mx-2">
+    <div className="group md:w-1/4 my-2 mx-2" key={nanoid()}>
       <div className="bg-blue-50 shadow group-hover:bg-violet-500 group-hover:shadow-lg rounded-md border border-1 p-2 1 ">
         <div className="group-hover:text-white group-hover:font-bold font-semibold text-xl my-2">
           {title}:
