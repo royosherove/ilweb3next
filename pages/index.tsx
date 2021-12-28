@@ -28,7 +28,7 @@ function indexCards():ReactFragment{
 }
 function indexCard(title:string,text:string): ReactFragment{
   return (
-            <div id={nanoid()} className="md:w-1/4 my-2 mx-2 group">
+            <div id={nanoid()} className="group md:w-1/4 my-2 mx-2">
             <div className="bg-blue-50  shadow group-hover:bg-violet-500 group-hover:shadow-lg rounded-md border border-1 p-2 1 ">
                 <div className="group-hover:font-bold group-hover:text-white font-semibold text-xl my-2">{title}:</div>
                 <div className='group-hover:text-white'>{text}</div>
