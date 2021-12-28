@@ -27,11 +27,11 @@ function indexCards():ReactFragment{
 function indexCard(title:string,text:string): ReactFragment{
   return (
     <div className="group md:w-1/4 my-2 mx-2" key={nanoid()}>
-      <div className="bg-blue-50 shadow group-hover:bg-violet-500 group-hover:shadow-lg rounded-md border border-1 p-2 1 ">
-        <div className="group-hover:text-white group-hover:font-bold font-semibold text-xl my-2">
+      <div className="bg-blue-50 shadow group-hover:bg-violet-500 group-hover:shadow-lg rounded-md border border-1 p-2 1 duration-100 transition-all ">
+        <div className="ml-2 group-hover:ml-0 scale-95  group-hover:scale-100 group-hover:text-white group-hover:font-bold font-semibold text-xl my-2 transition-all duration-500 ">
           {title}:
         </div>
-        <div className="group-hover:text-white">{text}</div>
+        <div className="group-hover:text-white transition-all duration-200">{text}</div>
       </div>
     </div>
   );
