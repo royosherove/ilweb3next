@@ -38,95 +38,107 @@ function indexCard(title:string,text:string): ReactFragment{
 }
 export default function Home() {
   return (
-      <div className="">
-        <Head>
-          <title>ILW3</title>
-          <meta
-            name="description"
-            content="Israel Web3 and Smart Contract Developers Meetup"
-          />
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
+    <div className="">
+      <Head>
+        <title>ILW3</title>
+        <meta
+          name="description"
+          content="Israel Web3 and Smart Contract Developers Meetup"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-        <main className="">
-          <div className='group rounded bg-purple-600 p-2 text-center w-1/4 space-x-12  '>
-            <a
-              className="text-white group-hover:text-yellow-500 "
-              href="https://discord.gg/YnpgKfcyyW"
-              target="_blank"
-              rel="noreferrer"
-            >
-            Discord 
-            </a>
-            <a
-              className="text-white group-hover:text-yellow-500 "
-              href="https://www.meetup.com/ilw3-israel-web-3-0-smart-contracts-dev-meetup/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Meetup Group
-            </a>
-          </div>
+      <main className="">
+        <div className="group rounded-r bg-purple-600 p-2 text-center  md:w-1/4 divide-x-2 space-x-6  ">
+          <a
+            className="text-white group-hover:text-yellow-500 "
+            href="https://discord.gg/YnpgKfcyyW"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Discord
+          </a>
+          <a
+            className="text-white group-hover:text-yellow-500 pl-2 "
+            href="https://www.meetup.com/ilw3-israel-web-3-0-smart-contracts-dev-meetup/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Meetup Group
+          </a>
+        </div>
 
-          <div className="flex justify-center mt-10">
-            <h1 className="grid items-center px-20 py-1 text-2xl font-semibold space-y-0 ">
-              <div className=" ">Israel</div>
-              <div className="text-3xl text-white font-bold bg-blue-500 rounded-md py-2 px-4 mx-1 leading-1 shadow shadow-red-200 hover:shadow-xl">
+        <div className="flex justify-center mt-10">
+          <h1 className="grid items-center px-2 md:px-20 py-1 text-lg md:text-2xl font-semibold space-y-0 ">
+            <div className=" ">Israel</div>
+            <div className=" md:flex text-3xl text-white font-bold bg-blue-500 rounded-md py-2 px-4 mx-1 leading-1 shadow shadow-red-200">
+              <div>
                 Web<sup className="text-xl">3</sup>
                 <span className="text-lg text-yellow-300 font-mono font-normal mx-2 leading-1">
                   &
                 </span>
-                <span>Smart Contracts</span>
               </div>
-              <div className="text-right  italic font-normal">
-                Developers Meetup
-              </div>
-            </h1>
-          </div>
-          <div className="flex-grid sm:flex space-x-2 sm:mx-20  sm:items-start mt-20 ">
-            {indexCards()}
-          </div>
-        </main>
+              <span>Smart Contracts</span>
+            </div>
+            <div className="text-right  italic font-normal text-sm md:text-lg">
+              Developers Meetup
+            </div>
+          </h1>
+        </div>
+        <div className="flex-grid sm:flex space-x-2 sm:mx-20  sm:items-start mt-20 ">
+          {indexCards()}
+        </div>
+      </main>
 
-        <footer className="grid  m-2 text-center space-x-2 lg:mx-20 lg:mt-20">
-          <div className="text-sm lg:text-right font-mono">
-            <a
-              className="text-blue-600 underline mx-2"
-              href="https://ipfs.fleek.co/ipfs/QmR1Bro6godmmfWpLGUZpUsKsbKp4A1vkzK9MZQpYTTYKa/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              IPFS Link 1 (Fleek)
-            </a>
-          </div>
-          <div className="text-sm lg:text-right font-mono">
-            <a
-              className="text-blue-600 underline mx-2"
-              href="https://bafybeibhs2vhdw2gp3dbcq4kk7pw5pitad36cdnibgccoby4se2znivu4e.ipfs.infura-ipfs.io/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {" "}
-              IPFS Link 2 (infura)
-            </a>
-          </div>
-          <div className="text-sm lg:text-right font-mono">
-            <a
-              className="text-blue-600 underline mx-2"
-              href="https://github.com/royosherove/ilweb3next/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {" "}
-              Contribute code to this website on GitHub
-            </a>
-          </div>
-        </footer>
+      <footer className="grid  m-2 text-center space-x-2 lg:mx-20 lg:mt-20">
+        <div className="text-sm lg:text-right font-mono">
+          <a
+            className="text-blue-600 underline mx-2"
+            href="https://ipfs.fleek.co/ipfs/QmR1Bro6godmmfWpLGUZpUsKsbKp4A1vkzK9MZQpYTTYKa/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            IPFS Link 1 (Fleek)
+          </a>
+        </div>
+        <div className="text-sm lg:text-right font-mono">
+          <a
+            className="text-blue-600 underline mx-2"
+            href="https://bafybeibhs2vhdw2gp3dbcq4kk7pw5pitad36cdnibgccoby4se2znivu4e.ipfs.infura-ipfs.io/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            IPFS Link 2 (infura)
+          </a>
+        </div>
+        <div className="text-sm lg:text-right font-mono">
+          <a
+            className="text-blue-600 underline mx-2"
+            href="https://github.com/royosherove/ilweb3next/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            Contribute code to this website on GitHub
+          </a>
+        </div>
+      </footer>
       <div id="clickyweb">
         <script async src="//static.getclicky.com/101347612.js"></script>
-        <noscript> <p> <img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101347612ns.gif" /> </p>
+        <noscript>
+          {" "}
+          <p>
+            {" "}
+            <img
+              alt="Clicky"
+              width="1"
+              height="1"
+              src="//in.getclicky.com/101347612ns.gif"
+            />{" "}
+          </p>
         </noscript>
       </div>
-      </div>
+    </div>
   );
 }
