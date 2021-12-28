@@ -2,6 +2,8 @@
 import { nanoid } from 'nanoid';
 import Head from 'next/head'
 import { ReactFragment } from 'react'
+import TopMenuComponent from './TopMenuComponent';
+import WalletButton from './WalletButtonComponent';
 
 function indexCards():ReactFragment{
   const cards = [
@@ -22,6 +24,7 @@ function indexCards():ReactFragment{
   ]
     return <>
       {cards.map(c=>indexCard(c.title,c.text))}
+
     </>
 }
 function indexCard(title:string,text:string): ReactFragment{
@@ -48,24 +51,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="">
-        <div className="group rounded-r bg-purple-600 p-2 text-center  md:w-1/4 divide-x-2 space-x-6  ">
-          <a
-            className="text-white group-hover:text-yellow-500 "
-            href="https://discord.gg/YnpgKfcyyW"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Discord
-          </a>
-          <a
-            className="text-white group-hover:text-yellow-500 pl-2 "
-            href="https://www.meetup.com/ilw3-israel-web-3-0-smart-contracts-dev-meetup/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Meetup Group
-          </a>
+      <main className="grid">
+        <div className=''>
+          <WalletButton />
+          <TopMenuComponent/>
         </div>
 
         <div className="flex justify-center mt-10">
