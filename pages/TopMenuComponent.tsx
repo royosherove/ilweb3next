@@ -11,7 +11,7 @@ const TopMenuComponent = () => (
       Discord
     </a>
     <a
-      className="text-white group-hover:text-yellow-500 pl-1 pr-1  text-sm md:text-lg"
+      className="text-white group-hover:text-yellow-500 pl-1 pr-2 md:pl-6  text-sm md:text-lg"
       href="https://www.meetup.com/ilw3-israel-web-3-0-smart-contracts-dev-meetup/"
       target="_blank"
       rel="noreferrer"
