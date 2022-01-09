@@ -59,6 +59,9 @@ export default function Home() {
 
         <div className="flex justify-center mt-10">
           <h1 className="grid items-center px-2 md:px-20 py-1 text-lg md:text-2xl font-semibold space-y-0 ">
+            {/* <div id="imgContainer" className='h-64 max-h-64 bg-red-500'> */}
+            <img alt='Bored web 3 dev image' className='ml-28 -mb-6 hidden md:block rounded-md w-60 shadow-md ' src='/bored.png'/>
+            {/* </div> */}
             <div className=" ">Israel</div>
             <div className=" md:flex text-3xl text-white font-bold bg-blue-500 rounded-md py-2 px-4 mx-1 leading-1 shadow shadow-red-200">
               <div>
