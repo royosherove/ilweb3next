@@ -11,6 +11,9 @@ const TopMenuComponent = () => (
     <a target="_blank" rel="noreferrer noopener" href="https://youtube.com/channel/UCRfgLdabcXDFKhv_BFazjYw">
       YouTube
     </a>
+    <a target="_blank" rel="noreferrer noopener" href="https://github.com/royosherove/ilweb3next">
+      GitHub
+    </a>
   </div>
 );
 
