@@ -8,6 +8,9 @@ const TopMenuComponent = () => (
     <a target="_blank" rel="noreferrer noopener" href="https://www.meetup.com/ilw3-israel-web-3-0-smart-contracts-dev-meetup/">
       Meetup
     </a>
+    <a target="_blank" rel="noreferrer noopener" href="https://youtube.com/channel/UCRfgLdabcXDFKhv_BFazjYw">
+      YouTube
+    </a>
   </div>
 );
 
